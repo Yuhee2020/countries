@@ -1,0 +1,7 @@
+.searchContainer{
+  margin-bottom: 20px;
+  width: 320px;
+  @media (max-width: 330px) {
+    width: 260px;
+  }
+}

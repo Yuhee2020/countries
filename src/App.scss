@@ -1,6 +1,32 @@
-.AppContainer{
-  margin: 10px 5%;
+body{
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/collections-7d02e.appspot.com/o/files%2FSenzaGen_partners.jpg?alt=media&token=fac4cb49-fe71-4eba-a0ef-269b36715ea8");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+.AppContainer {
+  margin: 20px ;
   display: flex;
   justify-content: center;
+  background-position: center;
+  @media (max-width: 330px) {
+    margin: 40px 3px ;
+  }
+
+  .countriesPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cards {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
 }
+
+
 

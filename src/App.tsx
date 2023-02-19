@@ -4,7 +4,6 @@ import {CountriesPage} from "./pages/countriesPage/CountriesPage";
 
 
 function App() {
-
     return (
         <div className="AppContainer">
            <CountriesPage/>
