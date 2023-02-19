@@ -1,14 +1,14 @@
 import React from 'react';
-import "./App.scss"
-import {CountriesPage} from "./pages/countriesPage/CountriesPage";
 
+import './App.scss';
+import { CountriesPage } from './pages';
 
-function App() {
-    return (
-        <div className="AppContainer">
-           <CountriesPage/>
-        </div>
-    );
-}
+const App = () => {
+  return (
+    <div className="AppContainer">
+      <CountriesPage />
+    </div>
+  );
+};
 
 export default App;
