@@ -6,21 +6,16 @@ export const ALL_COUNTRIES = gql`
     countries {
         code
         name
-        native
         phone
         capital
         currency
         languages {
-            name
             native
         }
         continent {
             name
         }
         emoji
-        states {
-            name
-        }
     }
 }
 `;
