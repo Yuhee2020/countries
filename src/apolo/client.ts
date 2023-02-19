@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 
 export const client = new ApolloClient({
-    uri: 'https://countries.trevorblades.com/graphql',
+    uri: process.env.REACT_APP_BASE_URL,
     cache: new InMemoryCache(),
 });
 

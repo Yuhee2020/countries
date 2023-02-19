@@ -9,18 +9,16 @@ type PropsType = {
     onAutocompleteChange: (event: SyntheticEvent<Element, Event>, newValue: CountryType | null) => void
 }
 
-
 export const CountrySearch = ({countries, onAutocompleteChange}: PropsType) => {
 
     const handleAutocompleteChange = (event: SyntheticEvent<Element, Event>,
                                       newValue: CountryType | null) => {
         onAutocompleteChange(event, newValue)
     }
-
     return (
         <Zoom>
-
-                <Paper className="searchContainer"><Autocomplete
+            <Paper className="searchContainer">
+                <Autocomplete
                     onChange={handleAutocompleteChange}
                     options={countries}
                     autoHighlight
@@ -38,8 +36,8 @@ export const CountrySearch = ({countries, onAutocompleteChange}: PropsType) => {
 
                         />
                     )}
-                /></Paper>
-
+                />
+            </Paper>
         </Zoom>
     );
 };
